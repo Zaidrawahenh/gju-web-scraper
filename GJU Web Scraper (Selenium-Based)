@@ -1,0 +1,21 @@
+# GJU Web Scraper (Selenium-Based)
+
+This repository contains a full web scraping pipeline built to extract, clean, and chunk textual content from the official German Jordanian University (GJU) website.
+
+The scraper was created as part of a university RAG Chatbot project — where collected data will later be transformed into embeddings and stored in a vector database.
+
+
+
+## 🚀 Features
+
+- Scrapes any list of URLs using **Selenium**
+- Automatically detects the main content area of each page
+- Extracts text while ignoring navigation bars, sidebars, and menus
+- Splits long pages into fixed-size chunks (260 words with 50-word overlap)
+- Saves all results to a clean CSV file
+- URLs are loaded from an external CSV file (`urls.csv`)
+- Output is ready for **Embeddings → Vector DB → Retriever → RAG Chatbot**
+
+
+
+
